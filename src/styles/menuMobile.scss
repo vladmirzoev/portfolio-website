@@ -1,0 +1,47 @@
+@import './variables.scss';
+.menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__button{
+        cursor: pointer;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size: 32px;
+    }
+
+    // When menu is open the layout is changed
+
+    &__active{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+
+
+        .menu-mobile__logo{
+            display: none;
+        }
+    }
+}
+
+nav{
+    ul{
+        list-style: none;
+        padding: 0;
+        li {
+            font-size: 32px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        li:hover {
+            color: $main-grey;
+        }
+    }
+}

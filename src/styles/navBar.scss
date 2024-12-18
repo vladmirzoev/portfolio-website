@@ -1,0 +1,31 @@
+// @import url(/src/styles/variables.scss);
+@import './variables.scss';
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &-logo{
+        display: flex;
+    }
+    &-items{
+        display: flex;
+        width: 40%;
+        justify-content: space-evenly;
+        
+        &__item{
+            color: $main-light-grey;
+            display: flex;
+        }
+    }
+    &-language{
+        display: flex;
+        flex-direction: column;
+        &__button {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+        }
+    }
+}
