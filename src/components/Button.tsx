@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/main.scss';
 
-const Button = ({ text = "", link, icon = "", style }) => {
+const Button = ({ text = "", link, icon = '', style }) => {
     let buttonClass = "btn";
     if (style === "primary") {
         buttonClass += " btn-primary";
@@ -9,7 +9,7 @@ const Button = ({ text = "", link, icon = "", style }) => {
         buttonClass += " btn-secondary"
     }
 
-    if (icon !== "") {
+    if (icon !== null) {
         buttonClass += " btn-primary__round"
     }
 
@@ -26,7 +26,9 @@ const Button = ({ text = "", link, icon = "", style }) => {
     return (
         <a href={link} className={buttonClass} onClick={handleClick}>
             {icon &&
-                <span className="btn__icon">{icon}</span>
+                <span className="btn__icon">
+                    <img src={icon} alt="" />
+                </span>
             }
             {text &&
                 <span className="btn__text">{text}</span>

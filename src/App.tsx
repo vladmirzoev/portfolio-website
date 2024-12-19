@@ -3,6 +3,7 @@ import StandardContainer from './components/StandardContainer'
 import MenuMobile from './components/MenuMobile'
 import './App.css'
 import HomeBLock from './components/HomeBlock'
+import About from './components/About'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         {/* <NavBar /> */}
 
         <HomeBLock />
+        <About />
       </StandardContainer>
       
     </>

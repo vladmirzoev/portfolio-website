@@ -1,4 +1,9 @@
 import '../styles/homeBlock.scss';
+import Telegram from '../assets/icons/telegram.svg';
+import LinkedIn from '../assets/icons/linkedin.svg';
+import GitHub from '../assets/icons/gitHub.svg';
+import Instagram from '../assets/icons/instagram.svg';
+import ArrowRight from '../assets/icons/Arrow.svg';
 import Button from './Button';
 
 const HomeBLock = () => {
@@ -15,12 +20,12 @@ const HomeBLock = () => {
                         <Button
                             text="Projects"
                             style="primary"
-                            link="#"
+                            link=''
                             />
                         <Button
                             style="primary"
                             link="#"
-                            icon='->'
+                            icon={ArrowRight}
                         />
                     </div>
                 </div>
@@ -30,25 +35,25 @@ const HomeBLock = () => {
                         text='GitHub'
                         style='secondary'
                         link='#'
-                        icon=''
+                        icon={GitHub}
                     />
                     <Button
                         text='LinkedIn'
                         style='secondary'
                         link='#'
-                        icon=''
+                        icon={LinkedIn}
                     />
                     <Button
                         text='Telegram'
                         style='secondary'
                         link='#'
-                        icon=''
+                        icon={Telegram}
                     />
                     <Button
                         text='Instagram'
                         style='secondary'
                         link='#'
-                        icon=''
+                        icon={Instagram}
                     />
                 </div>
                 

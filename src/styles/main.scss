@@ -35,6 +35,11 @@ text {
 
     &__icon {
         white-space: nowrap;
+        display: flex;
+        align-items: center;
+        img {
+            height: 18px;
+        }
     }
 
     &-secondary {
@@ -43,5 +48,8 @@ text {
         color: $main-light-grey;
         padding: 8px 14px;
         border: 0.5px solid $main-grey;
+        display: flex;
+        align-items: center;
+        gap: 12px;  
     }
 }

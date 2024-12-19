@@ -1,0 +1,21 @@
+@import './variables.scss';
+@import './main.scss';
+
+.card {
+    padding: 32px;
+    border-radius: 38px;
+    &-text {
+        &__heading {
+            font-family: 'Fira Code';
+        }
+        &__description {
+            font-family: 'Fira Code';
+        }
+    }
+    
+}
+
+.white {
+    background-color: $main-white;
+    color: $main-black;
+}
