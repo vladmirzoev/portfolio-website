@@ -4,6 +4,9 @@
 .card {
     padding: 32px;
     border-radius: 38px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    
     &-text {
         &__heading {
             font-family: 'Fira Code';
@@ -12,10 +15,28 @@
             font-family: 'Fira Code';
         }
     }
+
+    &-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            margin: 0;
+        }
+    }
     
 }
 
 .white {
     background-color: $main-white;
     color: $main-black;
+}
+
+.with-photo {
+    line-height: 0;
+    padding: 0;
 }

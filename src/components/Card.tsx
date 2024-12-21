@@ -9,6 +9,8 @@ type CardProps = {
     descriptionText?: string;
     button?: boolean;
     btnText?: string;
+    bgImage?: string;
+    photo?: string;
   };
 
 const Card = ({
@@ -17,34 +19,78 @@ const Card = ({
   descriptionText,
   button = false,
   btnText = '',
-  image = null
-}: CardProps) => (
-    <div className={`card ${bgColor}`}>
-            <div className="card-text">
-                {heading && 
-                    <h3 className="card-text__title">{heading}</h3>
-                }
-                {descriptionText &&
-                    <p className="card-text__description">{descriptionText}</p>
-                }
-                
-            </div>
-            {button &&
-                <div className="card-buttons">
-                    <Button
-                        text={btnText}
-                        link='/'
-                        style='primary'
-                    />
-                    <Button
-                        link='/'
-                        style='primary'
-                        icon={RightArrow}
-                    />
+  photo = '',
+  bgImage,
+}: CardProps) => {
+
+    const cardStyle = bgImage
+    ? { backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }
+    : { backgroundColor: bgColor }; // Use `bgColor` if no image is provided
+
+    return (
+        <>
+            {photo === '' ?
+                <div className={`card ${bgColor}`} style={cardStyle}>
+                            
+                    <div className="card-text">
+                        {heading && 
+                            <h3 className="card-text__title">{heading}</h3>
+                        }
+                        {descriptionText &&
+                            <p className="card-text__description">{descriptionText}</p>
+                        }
+                        
+                    </div>
+                    {button &&
+                        <div className="card-buttons">
+                            <Button
+                                text={btnText}
+                                link='/'
+                                style='primary'
+                            />
+                            <Button
+                                link='/'
+                                style='primary'
+                                icon={RightArrow}
+                            />
+                        </div>
+                    }
+                        
+                </div>
+            :
+                <div className={`card ${bgColor} with-photo`} style={cardStyle}>
+                    
+                    <img className="card-photo" src={photo} alt="photo of me:)" />
+                            
+                    <div className="card-text">
+                        {heading && 
+                            <h3 className="card-text__title">{heading}</h3>
+                        }
+                        {descriptionText &&
+                            <p className="card-text__description">{descriptionText}</p>
+                        }
+                        
+                    </div>
+                    {button &&
+                        <div className="card-buttons">
+                            <Button
+                                text={btnText}
+                                link='/'
+                                style='primary'
+                            />
+                            <Button
+                                link='/'
+                                style='primary'
+                                icon={RightArrow}
+                            />
+                        </div>
+                    }
+                        
                 </div>
             }
-            
-        </div>
-)
+        </>
+        
+    );
+};
 
 export default Card
