@@ -36,6 +36,11 @@
     color: $main-black;
 }
 
+.dark {
+    background-color: transparent;
+    border: solid 0.5px $main-white;
+}
+
 .with-photo {
     line-height: 0;
     padding: 0;

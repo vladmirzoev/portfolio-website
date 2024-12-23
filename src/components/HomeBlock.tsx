@@ -9,7 +9,7 @@ import Button from './Button';
 const HomeBLock = () => {
     return (
         <>
-            <div className="home">
+            <section className="home">
                 <div className="home-title">
                     <h1 className='home-title__heading'>Front-end</h1>
                     <h1 className='home-title__heading'>Developer</h1>
@@ -57,7 +57,7 @@ const HomeBLock = () => {
                     />
                 </div>
                 
-            </div>
+            </section>
         </>
     )
 }

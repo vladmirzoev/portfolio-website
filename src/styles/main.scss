@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import'./variables.scss';
 
+// text
+
 text {
     font-family: $font-title;
+}
+
+h1, h2, h3, p {
+    margin: 0;
 }
 .container {
     padding: 2rem;
@@ -52,4 +58,12 @@ text {
         align-items: center;
         gap: 12px;  
     }
+}
+
+// blocks
+
+section {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    
 }
