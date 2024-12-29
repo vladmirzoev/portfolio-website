@@ -8,8 +8,14 @@
     margin-bottom: 50px;
     
     &-text {
-        &__heading {
+        display: flex;
+        flex-direction: column;
+        
+        &__title {
             font-family: 'Fira Code';
+            font-size: 1.6rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
         }
         &__description {
             font-family: 'Fira Code';
@@ -44,4 +50,8 @@
 .with-photo {
     line-height: 0;
     padding: 0;
+}
+
+.card:last-child{
+    margin: 0;
 }

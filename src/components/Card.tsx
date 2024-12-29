@@ -34,7 +34,7 @@ const Card = ({
                             
                     <div className="card-text">
                         {heading && 
-                            <h3 className="card-text__title">{heading}</h3>
+                            <span className="card-text__title">{heading}</span>
                         }
                         {descriptionText &&
                             <p className="card-text__description">{descriptionText}</p>
@@ -64,7 +64,7 @@ const Card = ({
                             
                     <div className="card-text">
                         {heading && 
-                            <h3 className="card-text__title">{heading}</h3>
+                            <span className="card-text__title">{heading}</span>
                         }
                         {descriptionText &&
                             <p className="card-text__description">{descriptionText}</p>

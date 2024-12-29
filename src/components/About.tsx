@@ -20,7 +20,12 @@ const About = () => {
                     bgColor = 'dark'
                     descriptionText = 'CSS / SCSS / SASS'
                     heading = 'Styles'
-                />  
+                />
+                <Card
+                    bgColor = 'white'
+                    descriptionText = 'English / Dutch / Russian'
+                    heading = 'Languages'
+                />
             </section>
             
         </>
