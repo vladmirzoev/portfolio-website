@@ -5,6 +5,7 @@ import './App.css'
 import HomeBLock from './components/HomeBlock'
 import About from './components/About'
 import Projects from './components/Projects'
+import Contacts from './components/Contacts'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <HomeBLock />
         <About />
         <Projects />
+        <Contacts />
       </StandardContainer>
       
     </>
