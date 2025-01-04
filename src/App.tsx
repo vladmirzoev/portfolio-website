@@ -4,7 +4,7 @@ import MenuMobile from './components/MenuMobile'
 import './App.css'
 import HomeBLock from './components/HomeBlock'
 import About from './components/About'
-import Projects from './components/Projects'
+import ProjectsBlock from './components/ProjectsBlock'
 import Contacts from './components/Contacts'
 
 
@@ -17,7 +17,7 @@ function App() {
 
         <HomeBLock />
         <About />
-        <Projects />
+        <ProjectsBlock />
         <Contacts />
       </StandardContainer>
       

@@ -1,4 +1,7 @@
 import Card from "./Card";
+import Button from "./Button";
+import ArrowRight from "../assets/icons/Arrow.svg"
+import "../styles/project.scss";
 
 type ProjectProps = {
     heading: string;
@@ -13,12 +16,27 @@ const Project = ({
     } : ProjectProps) => {
     return (
         <>
-            <Card
-                bgColor = 'white'// Default to 'white'
-                heading = {heading}
-                descriptionText = {descriptionText}
-                bgImage = {bgImage}
-            />
+            <a href="#" className="project">
+                <Card
+                    bgColor = 'white'// Default to 'white'
+                    photo = {bgImage}
+                />
+                <div className="project-text">
+                    <figcaption>
+                        <strong>{heading}</strong>
+                        <span className="dash">—</span>
+                        {descriptionText}
+                    </figcaption>
+                    {/* <h3>{heading}</h3> */}
+                    <Button
+                        style="primary"
+                        link="#"
+                        icon={ArrowRight}
+                    />  
+                </div>
+                
+            </a>
+            
         </>
     )
 }

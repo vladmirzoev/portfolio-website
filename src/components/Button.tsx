@@ -8,8 +8,7 @@ const Button = ({ text = "", link, icon = '', style }) => {
     } else {
         buttonClass += " btn-secondary"
     }
-
-    if (icon !== null) {
+    if (icon !== '' && style === "primary") {
         buttonClass += " btn-primary__round"
     }
 

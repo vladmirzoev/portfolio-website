@@ -1,0 +1,20 @@
+.project {
+    &-text {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 2.4rem;
+    }
+}
+strong {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+figcaption p {
+    margin: 0;
+}
+
+.dash {
+    display: inline-block;
+    padding: 0 1.6rem;
+}

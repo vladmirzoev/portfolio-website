@@ -20,8 +20,8 @@ const HomeBLock = () => {
                         <Button
                             text="Projects"
                             style="primary"
-                            link=''
-                            />
+                            link='#'
+                        />
                         <Button
                             style="primary"
                             link="#"
