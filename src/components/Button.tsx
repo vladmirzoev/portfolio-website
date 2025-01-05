@@ -1,14 +1,21 @@
 import React from "react";
 import '../styles/main.scss';
 
-const Button = ({ text = "", link, icon = '', style }) => {
+interface ButtonProps {
+    text?: string,
+    link?: string,
+    icon?: JSX.Element,
+    style: string
+}
+
+const Button = ({ text = "", link, icon, style } : ButtonProps) => {
     let buttonClass = "btn";
     if (style === "primary") {
         buttonClass += " btn-primary";
     } else {
         buttonClass += " btn-secondary"
     }
-    if (icon !== '' && style === "primary") {
+    if (icon !== undefined && style === "primary") {
         buttonClass += " btn-primary__round"
     }
 
@@ -26,7 +33,7 @@ const Button = ({ text = "", link, icon = '', style }) => {
         <a href={link} className={buttonClass} onClick={handleClick}>
             {icon &&
                 <span className="btn__icon">
-                    <img src={icon} alt="" />
+                    {icon}
                 </span>
             }
             {text &&

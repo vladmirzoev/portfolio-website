@@ -1,6 +1,5 @@
 import Card from "./Card";
-import Button from "./Button";
-import ArrowRight from "../assets/icons/Arrow.svg"
+import ButtonArrow from './ButtonArrow';
 import "../styles/project.scss";
 
 type ProjectProps = {
@@ -27,12 +26,7 @@ const Project = ({
                         <span className="dash">—</span>
                         {descriptionText}
                     </figcaption>
-                    {/* <h3>{heading}</h3> */}
-                    <Button
-                        style="primary"
-                        link="#"
-                        icon={ArrowRight}
-                    />  
+                    <ButtonArrow />
                 </div>
                 
             </a>

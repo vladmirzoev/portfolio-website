@@ -5,7 +5,7 @@ import './App.css'
 import HomeBLock from './components/HomeBlock'
 import About from './components/About'
 import ProjectsBlock from './components/ProjectsBlock'
-import Contacts from './components/Contacts'
+import ContactsBlock from './components/ContactsBlock'
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <HomeBLock />
         <About />
         <ProjectsBlock />
-        <Contacts />
+        <ContactsBlock />
       </StandardContainer>
       
     </>
