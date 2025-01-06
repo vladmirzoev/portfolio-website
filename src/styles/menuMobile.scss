@@ -1,15 +1,31 @@
 @import './variables.scss';
 .menu-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 0;
+    color: $main-white;
+    background: $main-black;
+    z-index: 99;
+    transition: background-color .5s ease;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
 
     &__button{
+        display: contents;
         cursor: pointer;
         position: absolute;
         top: 40px;
         right: 40px;
         font-size: 32px;
+    }
+
+    &__logo h3 {
+        margin: 0;
     }
 
     // When menu is open the layout is changed
