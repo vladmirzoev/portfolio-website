@@ -12,7 +12,8 @@ function App() {
   return (
     <>
       <StandardContainer>
-        <MenuMobile />
+        <NavBar />
+        {/* <MenuMobile /> */}
         {/* <NavBar /> */}
 
         <HomeBLock />

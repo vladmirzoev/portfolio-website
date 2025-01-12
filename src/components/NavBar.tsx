@@ -3,28 +3,28 @@ export const NavBar = () => {
     return (
         <header>
             <div className="container">
-                <div className="menu">
+                <div className="hamburger-menu">
                     <a href="" className="menu__logo">
                         <h3>Vlad Mirzoev</h3>
                     </a>
-
-                    <nav className="navigation">
+                    <input id="menu__toggle" type="checkbox" />
+                        <label className="menu__btn" htmlFor="menu__toggle">
+                            <span></span>
+                        </label>   
+                    <nav className="menu__box">
                         <ul>
-                            <li>
+                            <li className='menu__item'>
                                 <a href="">About</a>
                             </li>
-                            <li>
+                            <li className='menu__item'>
                                 <a href="">Projects</a>
                             </li>
-                            <li>
+                            <li className='menu__item'>
                                 <a href="">Contacts</a>
                             </li>
                         </ul>
                     </nav>
-
-                    <span className="navigation__controls">
-                        {/* TODO */}
-                    </span>
+                                    
                 </div>
             </div>
         </header>
