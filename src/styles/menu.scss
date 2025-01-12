@@ -1,0 +1,73 @@
+// tbd
+@import './variables.scss';
+.menu {
+    width: 100%;
+    position: fixed;
+    background: blue;
+    left: 0;
+    top: 0;
+
+    &__container {
+        // padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__controls {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        &-text{
+           
+        }
+
+        &-icon {
+
+        }
+    }
+}
+
+.navigation {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: calc(100lvh - 6rem);
+    padding: 0;
+    background: $main-white;
+    overflow-y: auto;
+    text-align: center;      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .4s ease-in-out;
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        &-item {
+            &--link {
+                color: $main-black;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                font-size: 2.8rem;
+                line-height: 5.6rem;
+
+            }
+            
+        }
+
+    }
+}
+
+.isActive {
+    right: 0;
+}

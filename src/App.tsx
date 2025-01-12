@@ -6,15 +6,16 @@ import HomeBLock from './components/HomeBlock'
 import About from './components/About'
 import ProjectsBlock from './components/ProjectsBlock'
 import ContactsBlock from './components/ContactsBlock'
+import Menu from './components/Menu'
 
 
 function App() {
   return (
     <>
       <StandardContainer>
-        <NavBar />
-        {/* <MenuMobile /> */}
         {/* <NavBar /> */}
+        {/* <MenuMobile /> */}
+        <Menu />
 
         <HomeBLock />
         <About />
