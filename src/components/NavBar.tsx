@@ -1,3 +1,4 @@
+import '../styles/main.scss';
 import '../styles/navBar.scss'
 export const NavBar = () => {
     return (

@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import '../styles/main.scss';
 import '../styles/socialLinks.scss';
 
 interface Link {

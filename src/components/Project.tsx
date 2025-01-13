@@ -1,5 +1,6 @@
 import Card from "./Card";
 import ButtonArrow from './ButtonArrow';
+import '../styles/main.scss';
 import "../styles/project.scss";
 
 type ProjectProps = {

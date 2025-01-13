@@ -2,6 +2,7 @@ import DoubleHeading from "./DoubleHeading";
 import SocialLinks from "./socialLinks";
 import { contactLinks } from '../utils/links'
 import Card from "./Card";
+import '../styles/main.scss';
 
 const Contacts = () => {
     return (

@@ -1,5 +1,6 @@
 import Card from "./Card";
 import Photo from '../assets/img/about.jpg';
+import '../styles/main.scss';
 
 const About = () => {
     return (

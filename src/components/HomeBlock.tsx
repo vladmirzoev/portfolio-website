@@ -1,3 +1,5 @@
+import '../styles/variables.scss';
+import '../styles/main.scss';
 import '../styles/homeBlock.scss';
 import Telegram from '../assets/icons/telegram.svg';
 import LinkedIn from '../assets/icons/linkedin.svg';

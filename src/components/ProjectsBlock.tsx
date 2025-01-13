@@ -2,6 +2,7 @@ import Card from "./Card";
 import Project from "./Project";
 import UNO from "../assets/img/projects/uno.png";
 import TODO from "../assets/img/projects/todo.png";
+import '../styles/main.scss';
 import "../styles/projectsBlock.scss";
 
 const Projects = () => {
