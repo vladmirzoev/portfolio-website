@@ -1,0 +1,21 @@
+.about-wrapper {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 769px) {
+    .about-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 2rem;
+        
+
+        .card {
+            max-width: 40%;
+        }
+
+        p {
+            max-width: 45%;
+        }
+    }
+}

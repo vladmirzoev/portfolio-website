@@ -1,7 +1,7 @@
 import '../styles/variables.scss';
 import '../styles/main.scss';
 import '../styles/menu.scss'
-import LOGO from '../assets/react.svg'
+import LOGO from '../assets/logo.svg'
 import { useState } from 'react';
 import { useEffect } from 'react';
 

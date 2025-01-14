@@ -7,14 +7,25 @@
     }
 }
 strong {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 figcaption p {
     margin: 0;
 }
 
+figcaption {
+    font-size: 1.2rem;
+}
+
 .dash {
     display: inline-block;
     padding: 0 1.6rem;
+}
+
+// Media Queries: Whole Project
+@media (min-width: 576px) {
+    .project {
+        max-width: 45%;
+    }
 }

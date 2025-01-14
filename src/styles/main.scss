@@ -24,7 +24,7 @@ h3 {
     font-size: 2rem;
 }
 
-p {
+a, p {
     font-size: 1.6rem;
 }
 
@@ -33,54 +33,70 @@ span {
 }
 
 // texts media queries
+@media (min-width: 375px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+@media (min-width: 415px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
 
 @media (min-width: 575px) {
     h1 {
-        margin-bottom: 1.6rem;
-        font-size: 3rem;
-        line-height: 3.6rem;
+        // margin-bottom: 1.6rem;
+        font-size: 8rem;
+        line-height: 8rem;
     }
     h2 {
-        margin-bottom: 1.6rem;
+        // margin-bottom: 1.6rem;
         font-size: 2.8rem;
         line-height: 3.6rem;
     }
     h3 {
-        margin-bottom: 1.4rem;
-        font-size: 1.4rem;
+        // margin-bottom: 1.4rem;
+        font-size: 2rem;
         line-height: 3.6rem;
     }
-    p {
-        margin-bottom: 1.4rem;
-        font-size: 1.2rem;
+    a, p {
+        // margin-bottom: 1.4rem;
+        font-size: 1.6rem;
         line-height: 1.6rem;
+    }
+    span {
+        font-size: 1.6rem;
     }
 }
 
 @media (min-width: 769px) {
     h1 {
-        margin-bottom: 1.6rem;
-        font-size: 3rem;
-        line-height: 3.6rem;
+        // margin-bottom: 1.6rem;
+        font-size: 9rem;
+        line-height: 9rem;
     }
     h2 {
-        margin-bottom: 1.6rem;
+        // margin-bottom: 1.6rem;
         font-size: 2.8rem;
         line-height: 3.6rem;
     }
     h3 {
-        margin-bottom: 1.4rem;
+        // margin-bottom: 1.4rem;
         font-size: 1.4rem;
         line-height: 3.6rem;
     }
-    p {
-        margin-bottom: 1.4rem;
-        font-size: 1.2rem;
+    a, p {
+        // margin-bottom: 1.4rem;
+        font-size: 1.6rem;
         line-height: 1.6rem;
+    }
+    span {
+        font-size: 1.6rem;
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
     
     h1 {
         font-size: 9.6rem;
@@ -92,14 +108,17 @@ span {
         line-height: 6.4rem;
     }
     h3 {
-        margin-bottom: 1.4rem;
+        // margin-bottom: 1.4rem;
         font-size: 2.4rem;
         line-height: 2.4rem;
     }
-    p {
-        margin-bottom: 2rem;
-        font-size: 2rem;
+    a, p {
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
         line-height: 2rem;
+    }
+    span {
+        font-size: 1.6rem;
     }
 }
 
@@ -109,9 +128,9 @@ span {
 // blocks
 
 .container {
-    padding: 0 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
     box-sizing: border-box;
     @media (max-width: 768px) {
         padding: 2rem; // Responsive padding for smaller screens
@@ -123,9 +142,24 @@ span {
     }
 }
 
+@media (min-width: 576px) {
+    .container {
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
 // Buttons
 
 .btn {
+    flex-shrink: 0;
+    flex-grow: 0;
     border-radius: 50px;
     padding: 12px 76px;
     color: $main-grey;
@@ -141,13 +175,12 @@ span {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 2rem;
+        padding: 0.8rem 5.4rem;
         &__round {
             display: flex;
             justify-content: center;
-            height: 2.6rem;
-            width: 2.6rem;
-            min-width: 2.6rem;
+            height: 4.2rem;
+            width: 4.2rem;
             padding: 0;
         }
     }

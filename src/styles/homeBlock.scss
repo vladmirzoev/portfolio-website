@@ -1,11 +1,12 @@
 @import './variables.scss';
 
-.home{
-    margin-top: 60px;
+.home {
+    position: relative;
+    margin-top: 6rem;
     &-title{
         display: flex;
         flex-direction: column;
-        margin: 30px 0;
+        margin: 3rem 0;
         &__heading:nth-child(even){
             text-align: end;
         }
@@ -22,8 +23,8 @@
 
         &__buttons {
             display: flex;
-            margin-bottom: 30px;
-            gap: 14px;
+            margin-bottom: 3rem;
+            gap: 1rem;
             align-items: center;
         }
     }
@@ -35,6 +36,39 @@
         align-content: center;
         justify-content: flex-start;
         align-items: center;
-        gap: 20px;
+        gap: 2rem;
+    }
+}
+
+.main-photo {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .home {
+        &-description {
+            max-width: 50%;
+        }
+    }
+    .home-wrapper {
+        display: flex;
+    }
+    .main-photo {
+        position: absolute;
+        right: 0;
+        background: $main-light-grey;
+        border-radius: 2.4rem;
+        display: block;
+        width: 30%;
+        object-fit: cover;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            margin: 0;
+            max-height: 56rem;
+        }
     }
 }

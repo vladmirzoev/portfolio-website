@@ -11,7 +11,8 @@ const DoubleHeading = ( { firstText, secondText } : DoubleHeadingProps ) => {
     const containerStyle: React.CSSProperties = {
         display: "flex",
         flexDirection: "column", 
-        margin: "30px 0",
+        margin: "3rem 0",
+        maxWidth: "700px"
     };
 
     const firstHeadingStyle: React.CSSProperties = {
@@ -25,8 +26,8 @@ const DoubleHeading = ( { firstText, secondText } : DoubleHeadingProps ) => {
 
     return (
         <div style={containerStyle}>
-        <h1 style={firstHeadingStyle}>{firstText}</h1>
-        <h1 style={secondHeadingStyle}>{secondText}</h1>
+            <h1 style={firstHeadingStyle}>{firstText}</h1>
+            <h1 style={secondHeadingStyle}>{secondText}</h1>
         </div>
     );
 };

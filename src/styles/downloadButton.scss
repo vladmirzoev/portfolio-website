@@ -1,0 +1,14 @@
+@import './variables.scss';
+@import './main.scss';
+
+.resume {
+    height: 24rem;
+    background-color: $main-white;
+    color: $main-black;
+    transition: background-color 0.25s;
+}
+
+.resume:hover {
+    background-color: blue;
+    color: $main-white;
+}
