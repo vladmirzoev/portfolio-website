@@ -1,20 +1,14 @@
 import '../styles/variables.scss';
 import '../styles/main.scss';
 import '../styles/homeBlock.scss';
-import Telegram from '../assets/icons/telegram.svg';
-import LinkedIn from '../assets/icons/linkedin.svg';
-import GitHub from '../assets/icons/gitHub.svg';
-import Instagram from '../assets/icons/instagram.svg';
-import ArrowRight from '../assets/icons/Arrow.svg';
 import Button from './Button';
 import DoubleHeading from './DoubleHeading';
 import SocialLinks from './socialLinks';
 import { contactLinks } from '../utils/links'
-import ButtonArrow from './ButtonArrow'
-import Card from './Card';
+import ButtonArrow from './ButtonArrow';
 import { useState } from 'react';
-import MAIN_PHOTO from '../assets/img/photoCover.png'
-import HOVER_PHOTO from '../assets/img/photoCover-hover.png'
+import MAIN_PHOTO from '../assets/img/photoCover.png';
+import HOVER_PHOTO from '../assets/img/photoCover-hover.png';
 
 const HomeBLock = () => {
     const [imageSrc, setImageSrc] = useState(MAIN_PHOTO);
@@ -65,33 +59,6 @@ const HomeBLock = () => {
                 <SocialLinks
                     links={contactLinks}                    
                 />
-
-                {/* <div className="home-links">
-                    <Button
-                        text='GitHub'
-                        style='secondary'
-                        link='#'
-                        icon={GitHub}
-                    />
-                    <Button
-                        text='LinkedIn'
-                        style='secondary'
-                        link='#'
-                        icon={LinkedIn}
-                    />
-                    <Button
-                        text='Telegram'
-                        style='secondary'
-                        link='#'
-                        icon={Telegram}
-                    />
-                    <Button
-                        text='Instagram'
-                        style='secondary'
-                        link='#'
-                        icon={Instagram}
-                    />
-                </div> */}
                 
             </section>
         </>

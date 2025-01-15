@@ -1,13 +1,15 @@
 import React from "react";
 import '../styles/main.scss';
+import InfoGreen from "./InfoGreen";
 
 
 interface DoubleHeadingProps {
     firstText: string;
     secondText: string;
+    isInfo?: boolean;
 }
 
-const DoubleHeading = ( { firstText, secondText } : DoubleHeadingProps ) => {
+const DoubleHeading = ( { firstText, secondText, isInfo } : DoubleHeadingProps ) => {
     const containerStyle: React.CSSProperties = {
         display: "flex",
         flexDirection: "column", 
@@ -26,8 +28,13 @@ const DoubleHeading = ( { firstText, secondText } : DoubleHeadingProps ) => {
 
     return (
         <div style={containerStyle}>
-            <h1 style={firstHeadingStyle}>{firstText}</h1>
+            <h1 style={firstHeadingStyle}>{firstText}
+                
+            </h1>
             <h1 style={secondHeadingStyle}>{secondText}</h1>
+            {isInfo &&
+                <InfoGreen />
+            }
         </div>
     );
 };

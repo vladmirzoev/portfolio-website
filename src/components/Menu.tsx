@@ -50,13 +50,13 @@ export const Menu = () => {
                 <nav className={`navigation ${isToggled ? 'is-active' : ''}`}>
                     <ul className="navigation__list">
                         <li className="navigation__list-item">
-                            <a href="/" className='navigation__list-item--link'>About</a>
+                            <a href="#about" className='navigation__list-item--link'>About</a>
                         </li>
                         <li className="navigation__list-item">
-                            <a href="/" className='navigation__list-item--link'>Cases</a>
+                            <a href="#cases" className='navigation__list-item--link'>Cases</a>
                         </li>
                         <li className="navigation__list-item">
-                            <a href="/" className='navigation__list-item--link'>Contacts</a>
+                            <a href="#contacts" className='navigation__list-item--link'>Contacts</a>
                         </li>
                     </ul>
                 </nav>

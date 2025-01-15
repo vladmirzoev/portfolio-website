@@ -5,3 +5,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+@media (min-width: 576px) {
+    .projects-wrapper {
+        &__project {
+            max-width: 45%;
+        }
+    }
+}

@@ -2,13 +2,14 @@ import React from "react";
 import '../styles/main.scss';
 
 interface ButtonProps {
+    isLink?: boolean,
     text?: string,
     link?: string,
     icon?: JSX.Element,
     style: string
 }
 
-const Button = ({ text = "", link, icon, style } : ButtonProps) => {
+const Button = ({ isLink = true, text = "", link, icon, style } : ButtonProps) => {
     let buttonClass = "btn";
     if (style === "primary") {
         buttonClass += " btn-primary";
@@ -30,16 +31,27 @@ const Button = ({ text = "", link, icon, style } : ButtonProps) => {
 
 
     return (
-        <a href={link} className={buttonClass} onClick={handleClick}>
-            {icon &&
-                <span className="btn__icon">
-                    {icon}
-                </span>
-            }
-            {text &&
-                <span className="btn__text">{text}</span>
-            }
-        </a>
+        <>
+        {isLink &&
+            <a href={link} className={buttonClass} onClick={handleClick}>
+                {icon &&
+                    <span className="btn__icon">
+                        {icon}
+                    </span>
+                }
+                {text &&
+                    <span className="btn__text">{text}</span>
+                }
+            </a>
+        }
+        {!isLink && 
+            <div className={`${buttonClass} skill`}>
+                {text &&
+                    <span className="btn__text-caps">{text}</span>
+                }
+            </div>
+        }
+        </>
     )
 }
 
