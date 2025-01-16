@@ -5,6 +5,8 @@ import About from './components/About';
 import ProjectsBlock from './components/ProjectsBlock';
 import ContactsBlock from './components/ContactsBlock';
 import Menu from './components/Menu';
+import Footer from './components/Footer';
+import Timeline from './components/Timeline';
 
 
 function App() {
@@ -15,10 +17,18 @@ function App() {
 
         <HomeBLock />
         <About />
+      </StandardContainer>
+
+      {/* Educucation timeline excluded form container. Insted there is one inside */}
+      <Timeline />
+
+      <StandardContainer>
         <ProjectsBlock />
         <ContactsBlock />
       </StandardContainer>
+        
       
+      <Footer />
     </>
   )
 }

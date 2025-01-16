@@ -1,6 +1,45 @@
 @import './variables.scss';
 @import './main.scss';
 
+
+.download {
+    background-color: #1264FF;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1.2rem;
+    max-width: 24rem;
+
+    &__icon {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        background-color: $main-white;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2rem;
+    }
+
+    &__description {
+        font-size: 1.4rem;
+    }
+
+    &__button {
+        background-color: $main-white;
+        color: $main-black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+        width: fit-content;
+        font-size: 1.4rem;
+    }
+}
+
+.download > * {
+    margin: 0;
+}
 .resume {
     height: 24rem;
     background-color: $main-white;

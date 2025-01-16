@@ -3,6 +3,7 @@ import Photo from '../assets/img/about.jpg';
 import '../styles/main.scss';
 import '../styles/about.scss'
 import Button from "./Button";
+import UTWENTE__LOGO from '../assets/icons/utwente.svg'
 
 const About = () => {
     return (
@@ -87,28 +88,6 @@ const About = () => {
                 </div>
                 
                 <h3>Education</h3>
-                
-                <div className="cards-wrapper" style={{ display: 'flex', gap: '4rem', flexDirection: 'row', flexWrap: 'wrap' }}>
-                    <Card
-                        bgColor = 'white'
-                        descriptionText = 'TypeScript / React / Vue / HTML5 /'
-                        heading = 'Front-end'
-                    />
-                    <Card
-                        bgColor = 'dark'
-                        descriptionText = 'CSS / SCSS / SASS'
-                        heading = 'Styles'
-                    />
-                    <Card
-                        bgColor = 'white'
-                        descriptionText = 'English / Dutch / Russian'
-                        heading = 'Languages'
-                    />
-                </div>
-                
-                
-
-                
             </section>
             
         </>

@@ -1,3 +1,5 @@
+@import '../styles/variables.scss';
+@import '../styles/main.scss';
 .about-wrapper {
     margin-bottom: 4rem;
 }
@@ -7,7 +9,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     // max-width: 45%;
-    gap: 1rem;
+    gap: 2rem;
+    align-content: space-around;
 }
 
 @media (min-width: 769px) {
@@ -28,5 +31,123 @@
 
     .skills {
         max-width: 45%;
+    }
+}
+
+
+// Education styles
+.container__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid $main-light-grey;
+    padding: 1.2rem 0;
+}
+
+.education-wrapper__row {
+    border-bottom: 1px solid $main-light-grey;
+    padding: 1.2rem 0;
+
+    &--period {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &--institution {
+        display: flex;
+        padding: 1.5rem 0;
+        align-items: baseline;
+        // width: 65%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_name {
+            font-family: 'Open Sans';
+            margin: 0;
+        }
+    }
+
+    &--program {
+        display: flex;
+        align-items: center;
+        &_name {
+            margin: 0;
+        }
+    }
+}
+
+.education-wrapper__row:first-child {
+    border-top: 1px solid $main-light-grey;
+}
+
+.education-wrapper__row:hover {
+    background-color: $main-white;
+    border-color: $main-white;
+    p, span, h3 {
+        color: $main-black;
+    }
+
+    &--period {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &--institution {
+        display: flex;
+        padding: 1.5rem 0;
+        align-items: baseline;
+        width: 65%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_name {
+            font-family: 'Open Sans';
+            margin: 0;
+        }
+    }
+
+    &--program {
+        display: flex;
+        align-items: center;
+        &_name {
+            margin: 0;
+        }
+    }
+
+}
+.container-wrapper__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    // border-bottom: 1px solid $main-light-grey;
+    padding: 1.2rem 0;
+
+    &--period {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &--institution {
+        display: flex;
+        padding: 1.5rem 0;
+        align-items: baseline;
+        width: 65%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_name {
+            font-family: 'Open Sans';
+            margin: 0;
+        }
+    }
+
+    &--program {
+        display: flex;
+        align-items: center;
+        &_name {
+            margin: 0;
+        }
     }
 }
