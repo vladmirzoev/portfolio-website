@@ -1,4 +1,6 @@
 import StandardContainer from './StandardContainer';
+import '../styles/timeline.scss';
+import TimelineElement from './TimelineElement';
 
 const Timeline = () => {
     return (
@@ -7,21 +9,31 @@ const Timeline = () => {
                 <StandardContainer>
                     <h1>Education</h1>
                 </StandardContainer>
-                   <div className="education-wrapper__row">
-                        <StandardContainer>
-                            <div className="container-wrapper__row">
-                                <div className="container-wrapper__row--period">
-                                    <span className="container-wrapper__row--period_years">2022 -</span>
-                                    <span className="container-wrapper__row--period_total">2 years 6 months</span>
-                                </div>
-                                <div className="container-wrapper__row--institution">
-                                    <h3 className="container-wrapper__row--institution_name">University of Twente</h3>
-                                    <span className="container-wrapper__row--institution_program">Business Information Technology</span>
-                                </div>
-                            </div>
-                            
-                        </StandardContainer>
-                   </div>
+                <div className="education-table">
+                    <TimelineElement
+                        institution='University of Twente'
+                        yearStart={2022}
+                        yearFinish={2025}
+                        program='BSc | Business IT'
+                        duration='2 years 6 months'
+                    />
+                    <TimelineElement
+                        institution='Twente Pathway'
+                        yearStart={2021}
+                        yearFinish={2022}
+                        program="Pre-bachelor's | Engineering"
+                        duration='1 year'
+                    />
+                    <TimelineElement
+                        institution='IT Academy Step'
+                        yearStart={2020}
+                        yearFinish={2021}
+                        program='Course | WEB development'
+                        duration='1 year'
+                    />
+                    
+                </div>
+                   
                    
                </section>
                

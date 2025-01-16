@@ -86,8 +86,6 @@ const About = () => {
                         
                     </div>
                 </div>
-                
-                <h3>Education</h3>
             </section>
             
         </>
