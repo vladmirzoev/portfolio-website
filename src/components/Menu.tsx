@@ -11,6 +11,11 @@ export const Menu = () => {
     // Logic for header visibility
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    // const [isMenuOpen, setMenuOpen] = useState(false);
+
+    const handleClick = () => {
+        toggleMenu();
+    }
 
     const handleScroll = () => {
         const currentScrollY = window.scrollY;
@@ -50,13 +55,13 @@ export const Menu = () => {
                 <nav className={`navigation ${isToggled ? 'is-active' : ''}`}>
                     <ul className="navigation__list">
                         <li className="navigation__list-item">
-                            <a href="#about" className='navigation__list-item--link'>About</a>
+                            <a href="#about" className='navigation__list-item--link' onClick={handleClick}>About</a>
                         </li>
                         <li className="navigation__list-item">
-                            <a href="#cases" className='navigation__list-item--link'>Cases</a>
+                            <a href="#cases" className='navigation__list-item--link' onClick={handleClick}>Cases</a>
                         </li>
                         <li className="navigation__list-item">
-                            <a href="#contacts" className='navigation__list-item--link'>Contacts</a>
+                            <a href="#contacts" className='navigation__list-item--link' onClick={handleClick}>Contacts</a>
                         </li>
                     </ul>
                 </nav>

@@ -21,19 +21,19 @@ const Button = ({ isLink = true, text = "", link, icon, style } : ButtonProps) =
     }
 
     // Handle scrolling to the block using the link (anchor)
-    const handleClick = (e) => {
-        e.preventDefault();
-        const target = document.querySelector(link); // Find the section by link
-        if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "start" }); // Smooth scroll
-        }
-    };
+    // const handleClick = (e) => {
+    //     e.preventDefault();
+    //     const target = document.querySelector(link); // Find the section by link
+    //     if (target) {
+    //     target.scrollIntoView({ behavior: "smooth", block: "start" }); // Smooth scroll
+    //     }
+    // };
 
 
     return (
         <>
         {isLink &&
-            <a href={link} className={buttonClass} onClick={handleClick}>
+            <a href={link} target="_blank" rel="noopener noreferrer" className={buttonClass}>
                 {icon &&
                     <span className="btn__icon">
                         {icon}

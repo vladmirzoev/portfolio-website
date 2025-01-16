@@ -16,7 +16,7 @@ const Project = ({
     } : ProjectProps) => {
     return (
         <>
-            <a href="#" className="project">
+            <a href="https://github.com/vladmirzoev" target="_blank" rel="noopener noreferrer" className="project">
                 <Card
                     bgColor = 'white'// Default to 'white'
                     photo = {bgImage}

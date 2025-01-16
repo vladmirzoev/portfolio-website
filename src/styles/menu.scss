@@ -20,6 +20,7 @@
     background: blue;
     left: 0;
     top: 0;
+    padding: 1rem 0;
 
     &__container {
         // padding: 0;
@@ -35,9 +36,9 @@
         justify-content: space-between;
         gap: 1rem;
 
-        &-text{
-           font-size: 1rem;
-        }
+        // &-text{
+        //    font-size: 1rem;
+        // }
 
         &-icon {
             width: 2.4rem;

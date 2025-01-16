@@ -48,7 +48,7 @@ const HomeBLock = () => {
                         <Button
                             text="Projects"
                             style="primary"
-                            link='#'
+                            link='#cases'
                         />
                         <ButtonArrow />
                        
