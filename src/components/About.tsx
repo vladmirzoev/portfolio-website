@@ -1,9 +1,7 @@
-import Card from "./Card";
-import Photo from '../assets/img/about.jpg';
+
 import '../styles/main.scss';
 import '../styles/about.scss'
 import Button from "./Button";
-import UTWENTE__LOGO from '../assets/icons/utwente.svg'
 
 const About = () => {
     return (

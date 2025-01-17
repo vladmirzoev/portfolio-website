@@ -2,7 +2,6 @@ import pdfFile from '../../public/files/Vlad_Mirzoev_Resume.pdf';
 import '../styles/downloadButton.scss'
 import DOWNLOAD_ICON from '../assets/icons/download.svg';
 import RESUME__ICON from '../assets/icons/resume.svg';
-import Button from './Button';
 
 const DownloadButton = () => {
     return (
