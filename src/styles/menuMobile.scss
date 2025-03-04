@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use 'variables.scss';
 .menu-mobile {
     
 
@@ -7,8 +7,8 @@
     left: 0;
     right: 0;
     padding: 2rem 0;
-    color: $main-white;
-    background: $main-black;
+    color: variables.$main-white;
+    background: variables.$main-black;
     z-index: 99;
     transition: background-color .5s ease;
     // display: flex;
@@ -57,7 +57,7 @@ nav{
         }
 
         li:hover {
-            color: $main-grey;
+            color: variables.$main-grey;
         }
     }
 }

@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use 'variables.scss';
 
 .home {
     position: relative;
@@ -56,7 +56,7 @@
     .main-photo {
         position: absolute;
         right: 0;
-        background: $main-light-grey;
+        background: variables.$main-light-grey;
         border-radius: 2.4rem;
         display: block;
         width: 30%;

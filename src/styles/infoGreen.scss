@@ -1,5 +1,5 @@
-@import './variables.scss';
-@import './main.scss';
+@use 'variables.scss';
+@use 'main.scss';
 
 .information {
     border-radius: 2.4rem;

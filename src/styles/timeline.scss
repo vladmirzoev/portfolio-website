@@ -1,23 +1,23 @@
-@import '../styles/variables.scss';
-@import '../styles/main.scss';
+@use '../styles/variables.scss';
+@use '../styles/main.scss';
 
 
 // Education styles
 
 .education-wrapper__row {
-    border-bottom: 1px solid $main-light-grey;
+    border-bottom: 1px solid variables.$main-light-grey;
     padding: 1.2rem 0;
 
     &:first-child {
-        border-top: 1px solid $main-light-grey;
+        border-top: 1px solid variables.$main-light-grey;
     }
 }
 
 .education-wrapper__row:hover {
-    background-color: $main-white;
-    border-color: $main-white;
+    background-color: variables.$main-white;
+    border-color: variables.$main-white;
     p, span, h3 {
-        color: $main-black;
+        color: variables.$main-black;
     }
 }
 

@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use 'variables.scss';
 .scroll-up {
     animation: scroll-animation-up .3s;
     animation-iteration-count: 1;
@@ -76,7 +76,7 @@
     width: 100%;
     height: calc(100lvh);
     padding: 0;
-    background: $main-white;
+    background: variables.$main-white;
     overflow-y: auto;
     text-align: center;      
     display: flex;
@@ -92,7 +92,7 @@
         flex-direction: column;
         &-item {
             &--link {
-                color: $main-black;
+                color: variables.$main-black;
                 padding-left: 2rem;
                 padding-right: 2rem;
                 font-size: 2.8rem;
@@ -156,7 +156,7 @@
             flex-direction: row;
             &-item {
                 &--link {
-                    color: $main-white;
+                    color: variables.$main-white;
                     // padding-left: 2rem;
                     // padding-right: 2rem;
                     font-size: 1.6rem;

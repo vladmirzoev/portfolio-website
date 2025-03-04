@@ -1,5 +1,5 @@
-@import './variables.scss';
-@import './main.scss';
+@use 'variables.scss';
+@use 'main.scss';
 
 .card {
     padding: 3.2rem 2.4rem;
@@ -40,13 +40,13 @@
 }
 
 .white {
-    background-color: $main-white;
-    color: $main-black;
+    background-color: variables.$main-white;
+    color: variables.$main-black;
 }
 
 .dark {
     background-color: transparent;
-    border: solid 0.5px $main-white;
+    border: solid 0.5px variables.$main-white;
 }
 
 .with-photo {

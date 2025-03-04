@@ -1,5 +1,5 @@
-@import './variables.scss';
-@import './main.scss';
+@use 'variables.scss';
+@use 'main.scss';
 
 
 .download {
@@ -15,7 +15,7 @@
         display: flex;
         width: 4rem;
         height: 4rem;
-        background-color: $main-white;
+        background-color: variables.$main-white;
         align-items: center;
         justify-content: center;
         border-radius: 2rem;
@@ -26,8 +26,8 @@
     }
 
     &__button {
-        background-color: $main-white;
-        color: $main-black;
+        background-color: variables.$main-white;
+        color: variables.$main-black;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -42,12 +42,12 @@
 }
 .resume {
     height: 24rem;
-    background-color: $main-white;
-    color: $main-black;
+    background-color: variables.$main-white;
+    color: variables.$main-black;
     transition: background-color 0.25s;
 }
 
 .resume:hover {
     background-color: blue;
-    color: $main-white;
+    color: variables.$main-white;
 }
