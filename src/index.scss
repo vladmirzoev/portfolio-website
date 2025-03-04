@@ -1,14 +1,12 @@
-@use '.styles./variables.scss' as *;
-
-// @import './styles/variables.scss';
+@use 'styles/variables.scss';
 :root {
   font-family: Fira Code, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: $main-white;
-  background-color: $main-black;
+  color: variables.$main-white;
+  background-color: variables.$main-black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,12 +18,12 @@
 
 a {
   font-weight: 500;
-  color: $main-white;
+  color: variables.$main-white;
   // color: #64ff7e;
   text-decoration: inherit;
 }
 a:hover {
-  color: $main-light-grey;
+  color: variables.$main-light-grey;
   text-decoration: underline;
 }
 
