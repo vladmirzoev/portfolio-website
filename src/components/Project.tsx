@@ -7,16 +7,18 @@ type ProjectProps = {
     heading: string;
     descriptionText: string;
     bgImage: string;
+    link: string;
   };
 
 const Project = ({
     heading = 'Project',
     descriptionText = 'Project about bla bla',
     bgImage,
+    link,
     } : ProjectProps) => {
     return (
         <>
-            <a href="https://github.com/vladmirzoev" target="_blank" rel="noopener noreferrer" className="project">
+            <a href={`${link}`} target="_blank" rel="noopener noreferrer" className="project">
                 <Card
                     bgColor = 'white'// Default to 'white'
                     photo = {bgImage}

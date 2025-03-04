@@ -37,6 +37,7 @@ const Projects = () => {
                             heading="Todo App"
                             descriptionText="A user-friendly drag-n-drop task management application that allows users to efficiently organize their tasks. Key features include filtering, deadline management, search functionality, theme switching between dark and light modes, category management, and the ability to edit or delete tasks. This application streamlines task tracking and enhances productivity with its intuitive interface and robust functionality."
                             bgImage={todoImageSrc}
+                            link="https://todo-app-react-lyart-alpha.vercel.app/"
                         />
                     </div>
 
@@ -45,6 +46,7 @@ const Projects = () => {
                             heading="Server-client UNO Game"
                             descriptionText="Extension to a university project, transforming a text-based UNO game into a fully-fledged graphical application. Originally written in Java with a text UI, I recreated the game logic in JavaScript and developed an interactive GUI using React components. This project showcases my ability to adapt and enhance existing code, bridging different programming languages and frameworks to create a more engaging user experience."
                             bgImage={unoImageSrc}
+                            link="https://uno-game-react.vercel.app/"
                         />
                     </div>
                     
