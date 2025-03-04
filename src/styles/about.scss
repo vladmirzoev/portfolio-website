@@ -8,9 +8,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-content: flex-start;
     // max-width: 45%;
     gap: 2rem;
-    align-content: space-around;
+    // align-content: space-around;
 }
 
 @media (min-width: 769px) {

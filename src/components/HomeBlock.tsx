@@ -43,7 +43,7 @@ const HomeBLock = () => {
                 </div>
                 
                 <div className="home-description">
-                    <p>My goal is to write maintainable, clean and understandable code to process development was enjoyable</p>
+                    <p>Hey, I’m Vlad— a front-end developer who loves building interfaces that just make sense.</p>
                     <div className="home-description__buttons">
                         <Button
                             text="Projects"
