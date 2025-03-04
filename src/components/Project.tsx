@@ -18,7 +18,7 @@ const Project = ({
     } : ProjectProps) => {
     return (
         <>
-            <a href={`${link}`} target="_blank" rel="noopener noreferrer" className="project">
+            <a href={`${link}`} className="project">
                 <Card
                     bgColor = 'white'// Default to 'white'
                     photo = {bgImage}
