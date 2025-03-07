@@ -12,6 +12,15 @@
     // max-width: 45%;
     gap: 2rem;
     // align-content: space-around;
+    // :hover{
+    //     background-color: variables.$main-blue;
+    //     color: variables.$main-white;
+    // }
+}
+
+.skill:hover {
+    background-color: variables.$main-blue;
+        color: variables.$main-white;
 }
 
 @media (min-width: 769px) {
