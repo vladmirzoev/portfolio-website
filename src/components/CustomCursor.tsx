@@ -9,7 +9,7 @@ const CustomCursor = ({ active, text } : CustomCursorProps) => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
-        const updateCursor = (e) => {
+        const updateCursor = (e: MouseEvent) => {
             setPosition({ x: e.clientX, y: e.clientY });
         };
 

@@ -7,8 +7,8 @@ import SocialLinks from './socialLinks';
 import { contactLinks } from '../utils/links'
 import ButtonArrow from './ButtonArrow';
 import { useState } from 'react';
-import MAIN_PHOTO from '../assets/img/photoCover.png';
-import HOVER_PHOTO from '../assets/img/photoCover-hover.png';
+import MAIN_PHOTO from '../assets/img/PHOTO__COVER.png';
+import HOVER_PHOTO from '../assets/img/PHOTO__COVER--HOVER.png';
 
 const HomeBLock = () => {
     const [imageSrc, setImageSrc] = useState(MAIN_PHOTO);
