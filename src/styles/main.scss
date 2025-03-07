@@ -1,7 +1,6 @@
 @use './variables.scss' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-// @import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 // texts
@@ -167,7 +166,7 @@ span {
     padding: 1.2rem 7.6rem;
     color: $main-grey;
     &__text {
-        font-family: 'Open Sans';
+        font-family: 'Montserrat';
         font-style: italic;
 
         &-caps {

@@ -1,0 +1,40 @@
+@use './variables.scss';
+
+.custom-cursor {
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cursor-circle {
+    width: 2rem;
+    height: 2rem;
+    background-color: variables.$main-white;
+    border-radius: 50%;
+    transition: transform 0.1s ease-out;
+    position: relative;
+}
+
+.cursor-text {
+    background-color: variables.$main-blue;
+    color: variables.$main-white;
+    padding: .6rem 1.2rem;
+    border-radius: 4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    position: absolute;
+    left: 3rem;
+}
+
+.custom-cursor.active .cursor-text {
+    opacity: 1;
+    transform: translateX(0);
+}
