@@ -1,4 +1,4 @@
-import pdfFile from '../../public/files/Vladislav_Mirzoev__Resume.pdf';
+import pdfFile from '../../public/files/VladislavMirzoev_CV.pdf';
 import '../styles/downloadButton.scss'
 import DOWNLOAD_ICON from '../assets/icons/download.svg';
 import RESUME__ICON from '../assets/icons/resume.svg';
