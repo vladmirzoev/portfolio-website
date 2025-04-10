@@ -3,6 +3,8 @@ import UNO from "../assets/img/projects/uno.png";
 import UNO_HOVER from "../assets/img/projects/uno-hover.png";
 import TODO from "../assets/img/projects/todo-main.png";
 import TODO_HOVER from "../assets/img/projects/todo-hover.png";
+import MURLAB from "../assets/img/projects/MURLAB.png";
+import MURLAB_HOVER from "../assets/img/projects/MURLAB_HOVER.png";
 import '../styles/main.scss';
 import "../styles/projectsBlock.scss";
 import { useState } from "react";
@@ -10,6 +12,7 @@ import { useState } from "react";
 const Projects = () => {
     const [todoImageSrc, setTodoImageSrc] = useState(TODO);
     const [unoImageSrc, setUnoImageSrc] = useState(UNO);
+    const [murlabImageSrc, setMurlabImageSrc] = useState(MURLAB);
 
     const handleTodoHover = () => {
         setTodoImageSrc(TODO_HOVER);
@@ -27,11 +30,28 @@ const Projects = () => {
         setUnoImageSrc(UNO);
     }
 
+    const handleMurlabHover = () => {
+        setMurlabImageSrc(MURLAB_HOVER);
+    }
+
+    const handleMurlabUnhover = () => {
+        setMurlabImageSrc(MURLAB);
+    }
+
     return (
         <>
             <section id="cases">
                 <h3 className="subtitle">.../Projects ...</h3>
                 <div className="projects-wrapper">
+                    <div className="projects-wrapper__project" onMouseEnter={handleMurlabHover} onMouseLeave={handleMurlabUnhover}>
+                        <Project
+                            heading="MURLAB | Webshop with digital products"
+                            descriptionText="Webshop with digital products, built with React, Firebase and NextJS"
+                            bgImage={murlabImageSrc}
+                            link="https://webshop-rust-six.vercel.app/"
+                        />
+                    </div>
+                    
                     <div className="projects-wrapper__project" onMouseEnter={handleTodoHover} onMouseLeave={handleTodoUnhover}>
                         <Project
                             heading="Todo App"
